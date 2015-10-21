@@ -9,6 +9,7 @@ Note: everything mentioned below applied to subdirectories as well.
 It first generate a digest file for each directory, the digest file is in Json format. Basically the digest contains the 
 digest value ( SHA256 value of the file content) and the last modification time.
 Example format: 
+```
 {
   "file1_1.txt": [
     [
@@ -32,4 +33,5 @@ Example format:
       "3032e7474e22dd6f35c618045299165b0b42a9852576b7df52c1b22e3255b112"
     ]
 ] }
+```
 The sync process is based on this digest file
